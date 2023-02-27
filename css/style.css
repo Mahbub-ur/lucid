@@ -181,20 +181,26 @@ header .img_bx{
     padding: 70px 0;
     border-bottom: 1px solid #ddd;
 }
-.product h1{
+h1{
     font-size: var(--size_32);
     color: var(--color_3);
     letter-spacing: 0.5px;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
-span{
+.product span,
+.beautiful span,
+.customize span,
+.pricing span{
     display: inline-block;
     width: 50px !important;
     margin: auto;
     position: relative;
 }
-span::before{
+.product span::before,
+.beautiful span::before,
+.customize span::before,
+.pricing span::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -204,7 +210,10 @@ span::before{
     border-radius: 10px;
     background-color: var(--color_1);
 }
-span::after{
+.product span::after,
+.beautiful span::after,
+.customize span::after,
+.pricing span::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -257,6 +266,7 @@ span::after{
     position: absolute;
     top: 0;
     left: 0;
+    width: 60%;
     animation: animate_2 1s linear infinite;
     animation-direction: alternate;
 }
@@ -271,14 +281,7 @@ span::after{
 .beautiful .right{
     margin-top: 20px;
 }
-.beautiful .right h1{
-    font-size: var(--size_32);
-    color: var(--color_3);
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    margin-bottom: 20px;
-}
-.beautiful .right p{
+p{
     font-size: var(--size_16);
     color: var(--color_4);
     font-weight: 400;
@@ -309,8 +312,73 @@ span::after{
     padding: 70px 0;
     background-color: var(--color_9);
 }
-.customize .left{}
-.customize .left h1{}
-.customize .left p{}
-.customize .right{}
-.customize .right .img_bx{}
+.pricing{
+    padding: 70px 0;
+    text-align: center;
+    background-image: url(../images/bg_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pricing .plan{
+    backdrop-filter: blur(5px);
+}
+.pricing h1{
+    color: var(--color_2);
+}
+.pricing p{
+    color: var(--color_2);
+    font-style: italic;
+    font-size: var(--size_22);
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    text-align: start;
+    font-weight: 300;
+    padding-top: 30px;
+}
+.pricing .img_bx{
+    overflow: hidden;
+}
+.pricing .img_bx img{
+    border-radius: 50%;
+}
+.pricing .content{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.pricing .content p{
+    padding: 0;
+    margin: 0;
+    font-size: var(--size_14);
+    font-weight: 200;
+}
+.pricing .content h2{
+    font-size: var(--size_14);
+    font-weight: 600;
+    color: var(--color_2);
+    letter-spacing: 0.5px;
+}
+.owl-carousel .owl-dots{
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.owl-carousel .owl-dots .owl-dot span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #777777;
+    margin: 2px;
+    transition: 0.3s all ease-in-out;
+}
+.owl-carousel .owl-dots .owl-dot.active span{
+    background-color: var(--color_1);
+    width: 25px !important;
+    border-radius: 15px;
+}
+.owl-carousel .owl-dots .owl-dot:hover span{
+    background-color: var(--color_8);
+}
