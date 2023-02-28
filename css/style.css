@@ -480,3 +480,47 @@ p{
 .contact_us .content{
     margin-top: 30px;
 }
+.contact_us form{
+    background-color: #151319;
+    padding: 20px 40px;
+    width: 700px;
+}
+.contact_us form .item{
+    display: flex;
+}
+.contact_us form .left{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin-right: 2%;
+}
+.contact_us form .left input{
+    background-color: #151319;
+    color: #ffffff;
+    border: 1px solid #777777;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+.contact_us form .left input:focus,
+.contact_us form .right textarea:focus{
+    box-shadow: none;
+}
+.contact_us form .right{
+    display: flex;
+    width: 50%;
+}
+.contact_us form .right textarea{
+    background-color: #151319;
+    color: #ffffff;
+    border: 1px solid #777777;
+    border-radius: 0;
+    height: 93%;
+}
+.contact_us form .button{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+.contact_us form .btn_custom_1{
+    display: inline-flex
+}
