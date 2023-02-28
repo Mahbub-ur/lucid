@@ -473,17 +473,23 @@ p{
     color: var(--color_2);
 }
 .contact_us{
-    padding: 40px 0;
+    padding: 40px 0 0 0;
     background-color: var(--color_8);
     text-align: center;
+    position: relative;
 }
 .contact_us .content{
     margin-top: 30px;
+    margin-bottom: 50%;
 }
 .contact_us form{
     background-color: #151319;
-    padding: 20px 40px;
+    padding: 70px 30px;
     width: 700px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .contact_us form .item{
     display: flex;
@@ -515,6 +521,7 @@ p{
     border: 1px solid #777777;
     border-radius: 0;
     height: 93%;
+    width: 94%;
 }
 .contact_us form .button{
     display: flex;
@@ -523,4 +530,25 @@ p{
 }
 .contact_us form .btn_custom_1{
     display: inline-flex
+}
+footer{
+    padding: 30px 0;
+    background-color: var(--color_7);
+    text-align: center;
+}
+footer .icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+footer .icon i{
+    color: var(--color_2);
+    font-size: var(--size_16);
+    margin-right: 20px;
+}
+footer .icon i:hover{
+    color: var(--color_1);
+}
+footer p{
+    margin: 0;
 }
