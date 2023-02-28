@@ -126,7 +126,7 @@ header .banner .left p{
     line-height: 24px;
     margin-bottom: 35px;
 }
-header .banner .left .btn_custom_1{
+.btn_custom_1{
     color: var(--color_2);
     background-color: var(--color_1);
     font-size: var(--size_16);
@@ -137,12 +137,12 @@ header .banner .left .btn_custom_1{
     margin-right: 10px;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
-header .banner .left .btn_custom_1:hover{
+.btn_custom_1:hover{
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: var(--color_8);
 }
-header .banner .left .btn_custom_2{
+.btn_custom_2{
     color: var(--color_1);
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -151,8 +151,9 @@ header .banner .left .btn_custom_2{
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 600;
+    margin-right: 15px;
 }
-header .banner .left .btn_custom_2:hover{
+.btn_custom_2:hover{
     background-color: var(--color_1);
     color: var(--color_8);
 }
@@ -191,7 +192,9 @@ h1{
 .product span,
 .beautiful span,
 .customize span,
-.pricing span{
+.pricing h6,
+.pricings span,
+.contact_us span{
     display: inline-block;
     width: 50px !important;
     margin: auto;
@@ -200,7 +203,9 @@ h1{
 .product span::before,
 .beautiful span::before,
 .customize span::before,
-.pricing span::before{
+.pricing h6::before,
+.pricings span::before,
+.contact_us span::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -213,7 +218,9 @@ h1{
 .product span::after,
 .beautiful span::after,
 .customize span::after,
-.pricing span::after{
+.pricing h6::after,
+.pricings span::after,
+.contact_us span::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -381,4 +388,95 @@ p{
 }
 .owl-carousel .owl-dots .owl-dot:hover span{
     background-color: var(--color_8);
+}
+.like{
+    padding: 30px 0;
+    background-color: var(--color_7);
+}
+.like h1{    
+    color: var(--color_2);
+    font-weight: 600;
+    display: flex;
+    margin: 0;
+}
+.like p{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--size_32);
+    color: var(--color_2);
+    font-weight: 300;
+}
+.pricings{
+    text-align: center;
+    padding: 70px 0;
+}
+.pricings .item{
+    margin-top: 15px;
+    border: 2px solid #e0e0e0;
+}
+.pricings .item h1{
+    padding: 20px 0;
+    border-bottom: 2px solid #e0e0e0;
+    margin: 0;
+    text-transform: uppercase;
+}
+.pricings .item .price{
+    border-bottom: 2px solid #e0e0e0;
+    padding: 15px 0;
+}
+.pricings .item .price h1{
+    font-size: var(--size_50);
+    display: inline-flex;
+    border: none;
+    padding: 0;
+}
+.pricings .item .price h1 sup{
+    top: 25px;
+    font-size: var(--size_22);
+}
+.pricings .item .price p{
+    margin: 0;
+    font-size: var(--size_16);
+}
+.pricings .item p{
+    padding: 15px 25px;
+}
+.pricings .item samp{
+    font-family: var(--sans_pro);
+    font-size: var(--size_16);
+    color: var(--color_1);
+    font-weight: 400;
+
+}
+.pricings .item .btn_custom_2{
+    border: 1px solid #ddd;
+    margin-bottom: 25px;
+    transition: 0.3s all ease-in-out;
+}
+.pricings .item:hover .btn_custom_2{
+    background-color: var(--color_1);
+    color: var(--color_2);
+}
+.pricings .item:hover .btn_custom_2:hover{
+    background-color: var(--color_3);
+    color: var(--color_8)
+}
+.pricings .item:hover h1{
+    color: var(--color_1);
+}
+.pricings .item:hover .price{
+    background-color: var(--color_1);
+}
+.pricings .item:hover .price h1{
+    color: var(--color_2);
+}
+.contact_us{
+    padding: 40px 0;
+    background-color: var(--color_8);
+    text-align: center;
+}
+.contact_us .content{
+    margin-top: 30px;
 }
