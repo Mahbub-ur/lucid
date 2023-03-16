@@ -321,6 +321,9 @@ p{
     padding: 70px 0;
     background-color: var(--color_9);
 }
+.customize .right{
+    height: 25px;
+}
 .pricing{
     padding: 70px 0;
     text-align: center;
@@ -452,16 +455,16 @@ p{
     font-weight: 400;
 
 }
-.pricings .item .btn_custom_2{
+.pricings .item .btn_custom_1{
     border: 1px solid #ddd;
     margin-bottom: 25px;
     transition: 0.3s all ease-in-out;
 }
-.pricings .item:hover .btn_custom_2{
+.pricings .item:hover .btn_custom_1{
     background-color: var(--color_1);
     color: var(--color_2);
 }
-.pricings .item:hover .btn_custom_2:hover{
+.pricings .item:hover .btn_custom_1:hover{
     background-color: var(--color_3);
     color: var(--color_8)
 }
@@ -523,15 +526,15 @@ p{
     border: 1px solid #777777;
     border-radius: 0;
     height: 93%;
-    width: 94%;
 }
 .contact_us form .button{
     display: flex;
     justify-content: flex-end;
-    margin: 10px;
+    margin: 10px 0 0 0;
 }
 .contact_us form .btn_custom_1{
-    display: inline-flex
+    display: inline-flex;
+    margin-right: 0;
 }
 footer{
     padding: 30px 0;

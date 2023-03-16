@@ -20,7 +20,6 @@
     }
     .btn_custom_1{
         padding: 7px 15px;
-        margin-top: 15px;
     }
     .beautiful{
         padding: 40px 0 20px 0;
@@ -52,4 +51,26 @@
     .customize .owl-carousel .owl-item img{
         height: 600px;
     }
+    .like h1{
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .like p{
+        margin: 5px 0 15px;
+    }
+    .like .button{
+        text-align: center;
+        margin-top: 5px;
+    }
+    .pricings .item{
+        margin: 40px 40px 0 40px;
+    }
+    .contact_us form{
+        margin-top: 30px;
+    }
+    .customize .right{
+        height: auto;
+    }
+    
 }
