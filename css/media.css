@@ -35,10 +35,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 90px;
+        margin-left: 75px;
     }
     .beautiful .right ul li{
-        width: 250px;
+        width: 242px;
     }
     .customize{
         padding: 40px 0 0;
@@ -48,10 +48,11 @@
     }
     .customize .right{
         margin-top: 10px;
-        max-height: fit-content;
+        height: calc(60vh + (100 - 60) * (100vw - 320px) / (575 - 320));
+        max-height: fit-content !important;
     }
-    .customize .owl-carousel .owl-item img{
-        height: auto;
+    .customize .right .img_custom{
+        transform: scale(0.6) translateY(-32%);
     }
     .like h1{
         display: block;
@@ -71,8 +72,4 @@
     .contact_us form{
         margin-top: 30px;
     }
-    .customize .right{
-        height: auto;
-    }
-    
 }
