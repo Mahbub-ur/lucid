@@ -1,4 +1,13 @@
-@media (max-width: 575px) and (min-width: 320px){
+@media (max-width: 1024px) {
+    .like .btn_custom_1{
+        margin-right: 0;
+    }
+    .contact_us form{
+        top: 48%;
+    }
+}
+
+@media (max-width: 768px) {
     header p{
         margin-top: 12px;
         margin-left: 4px;
@@ -12,6 +21,16 @@
         font-weight: 600;
         letter-spacing: 0.7px;
     }
+    .like .btn_custom_1{
+        padding: 10px 15px;
+        margin-right: 5px;
+    }
+    .contact_us form{
+        top: 47%;
+    }
+}
+
+@media (max-width: 575px) and (min-width: 320px){
     .banner .left{
         text-align: center;
     }

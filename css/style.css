@@ -9,12 +9,13 @@
     --color_7: #15141a;
     --color_8: #ededed;
     --color_9: #f2f2f2;
-    --size_14: 14px;
-    --size_16: 16px;
-    --size_22: 22px;
-    --size_32: 32px;
-    --size_44: 44px;
-    --size_50: 50px;
+    --size_14: calc(11px + (14 - 11) * (100vw - 320px) / (1140 - 320));
+    --size_16: calc(12px + (16 - 12) * (100vw - 320px) / (1140 - 320));
+    --size_18: calc(16px + (18 - 16) * (100vw - 320px) / (1140 - 320));
+    --size_22: calc(18px + (22 - 18) * (100vw - 320px) / (1140 - 320));
+    --size_32: calc(26px + (32 - 26) * (100vw - 320px) / (1140 - 320));
+    --size_44: calc(28px + (44 - 28) * (100vw - 320px) / (1140 - 320));
+    --size_50: calc(42px + (50 - 42) * (100vw - 320px) / (1140 - 320));
 }
 *{
     margin: 0;
@@ -30,6 +31,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    overflow: hidden;
 }
 header::before{
     content: '';
@@ -103,7 +105,7 @@ header .banner .left{
 }
 h5{
     color: var(--color_1);
-    font-size: calc(12px + (16 - 12) * (100vw - 320px) / (1140 - 320));
+    font-size: var(--size_16);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 600;
@@ -111,7 +113,7 @@ h5{
 }
 header .banner .left h2{
     color: var(--color_2);
-    font-size: calc(28px + (44 - 28) * (100vw - 320px) / (1140 - 320));
+    font-size: var(--size_44);
     text-transform: capitalize;
     letter-spacing: 0.5px;
     font-weight: 500;
@@ -119,7 +121,7 @@ header .banner .left h2{
 }
 header .banner .left p{
     color: var(--color_4);
-    font-size: calc(12px + (16 - 12) * (100vw - 320px) / (1140 - 320));
+    font-size: var(--size_16);
     text-transform: capitalize;
     letter-spacing: 0.5px;
     font-weight: 400;
@@ -181,7 +183,7 @@ header .img_bx{
     border-bottom: 1px solid #ddd;
 }
 h1{
-    font-size: calc(26px + (32 - 26) * (100vw - 320px) / (1140 - 320));
+    font-size: var(--size_32);
     color: var(--color_3);
     letter-spacing: 0.5px;
     font-weight: 700;
@@ -254,13 +256,13 @@ h1{
     color: var(--color_1);
 }
 .product .item h3{
-    font-size: calc(18px + (22 - 18) * (100vw - 320px) / (1140 - 320));
+    font-size: var(--size_18);
     color: var(--color_3);
     font-weight: 400;
     letter-spacing: 0.5px;
 }
 .product .item p{
-    font-size: calc(12px + (16 - 12) * (100vw - 320px) / (1140 - 320));
+    font-size: var(--size_16);
     color: var(--color_4);
     font-weight: 300;
     letter-spacing: 0.5px;
@@ -292,7 +294,7 @@ h1{
     margin-top: 20px;
 }
 p{
-    font-size: calc(12px + (16 - 12) * (100vw - 320px) / (1140 - 320));
+    font-size: var(--size_16);
     color: var(--color_4);
     font-weight: 400;
     letter-spacing: 0.5px;
@@ -342,7 +344,7 @@ p{
 .pricing p{
     color: var(--color_2);
     font-style: italic;
-    font-size: calc(18px + (22 - 18) * (100vw - 320px) / (1140 - 320));
+    font-size: var(--size_22);
     line-height: 30px;
     letter-spacing: 0.5px;
     text-align: start;
@@ -367,7 +369,7 @@ p{
     font-weight: 200;
 }
 .pricing .content h2{
-    font-size: calc(11px + (14 - 11) * (100vw - 320px) / (1140 - 320));
+    font-size: var(--size_14);
     font-weight: 600;
     color: var(--color_2);
     letter-spacing: 0.5px;
@@ -402,6 +404,7 @@ p{
 .like h1{    
     color: var(--color_2);
     font-weight: 600;
+    font-size: calc(16px + (32 - 16) * (100vw - 320px) / (1140 - 320));;
     display: flex;
     margin: 0;
 }
@@ -409,8 +412,8 @@ p{
     margin: 0;
     display: flex;
     justify-content: center;
+    font-size: var(--size_32);
     align-items: center;
-    font-size: calc(18px + (32 - 18) * (100vw - 320px) / (1140 - 320));
     color: var(--color_2);
     font-weight: 300;
 }
@@ -433,25 +436,25 @@ p{
     padding: 15px 0;
 }
 .pricings .item .price h1{
-    font-size: calc(42px + (50 - 42) * (100vw - 320px) / (1140 - 320));
+    font-size: var(--size_50);
     display: inline-flex;
     border: none;
     padding: 0;
 }
 .pricings .item .price h1 sup{
     top: 25px;
-    font-size: calc(18px + (22 - 18) * (100vw - 320px) / (1140 - 320));
+    font-size: var(--size_22);
 }
 .pricings .item .price p{
     margin: 0;
-    font-size: calc(12px + (16 - 12) * (100vw - 320px) / (1140 - 320));
+    font-size: var(--size_16);
 }
 .pricings .item p{
     padding: 15px 25px;
 }
 .pricings .item samp{
     font-family: var(--sans_pro);
-    font-size: calc(12px + (16 - 12) * (100vw - 320px) / (1140 - 320));
+    font-size: var(--size_16);
     color: var(--color_1);
     font-weight: 400;
 
@@ -549,7 +552,7 @@ footer .icon{
 }
 footer .icon i{
     color: var(--color_2);
-    font-size: calc(12px + (16 - 12) * (100vw - 320px) / (1140 - 320));
+    font-size: var(--size_16);
     margin-right: 20px;
 }
 footer .icon i:hover{
